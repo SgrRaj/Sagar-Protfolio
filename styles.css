@@ -1,142 +1,190 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
 }
 
+.github-link {
+  font-size: 2rem;
+}
+
+.linkedin-link,
+.gmail-link {
+  font-size: 2rem;
+  padding-left: 8px;
+}
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit:cover;
-    border: 3px solid #4CAF50;
-    box-shadow: 0 4px 8px rgba(20, 1, 1, 0.63);
-    margin: 20px 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4caf50;
+  box-shadow: 0 4px 8px rgba(20, 1, 1, 0.63);
+  margin: 20px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .profile-pic:hover {
-    transform: scale(1.1); /* Scales up the image */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.58); /* Darker shadow on hover */
+  transform: scale(1.1); /* Scales up the image */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.58); /* Darker shadow on hover */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+  display: inline;
+  margin: 0 10px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
-
 section {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 /* Projects Section */
 .projects {
-    display:-webkit-flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: -webkit-flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .project-card {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 250px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.16s forwards;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.16s forwards;
 }
 
 .project-card:nth-child(1) {
-    animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 .project-card:nth-child(2) {
-    animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 
 .project-card:nth-child(3) {
-    animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px #333;
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px #333;
 }
-
-
-
+.contact-me-text {
+  text-align: left;
+  margin-left: 125px;
+}
 
 .contact-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+  max-width: 400px;
+  margin-left: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
- 
-.social-links{
+
+.social-links {
+  text-align: center;
+}
+
+.github-link-down,.linkedin-link-down,.gmail-link-down{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.send-msg {
+  border: red solid;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  background-color: #d3d3d3;
+  
+}
+
+/* Scroll Up Button CSS */
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: whitesmoke;
+    color: #FFFFFF
+    
+    /* border: none;
+    padding 10px 15px;
+   border-radius:after;
     text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    
+    transition background-color 0.3s ease; */
     
 }
 
+.scroll-up:hover {
+    background-color: #d3d3d3;
+}
+
+
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
 }
