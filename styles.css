@@ -117,7 +117,7 @@ header h1 {
 }
 
 #education strong {
-  color: #0073e6; /* Customize this color if needed */
+  color: #0073e6; /*bold vl me color ke liye jaise OS language Database  */
 }
 
 #education em {
@@ -206,7 +206,7 @@ section {
   text-align: left;
 }
 
-/* Styling the contact section container */
+/* Styling the contact sectionr */
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -217,7 +217,7 @@ section {
 
 /* Styling the form */
 .contact-form {
-  flex: 1; /* Takes available space */
+  flex: 1;           /* Takes available space */
   max-width: 300px;
   border-radius: 20px;
 }
@@ -248,7 +248,7 @@ section {
   flex: 0 0 800px; /* Fixed width for links */
 }
 
-/* Styling individual links */
+/* Styling git and linkedin links */
 .git-linkedin a {
   margin: 1px 0;
   font-size: 20px;
