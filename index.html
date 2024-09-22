@@ -43,108 +43,144 @@
 
       <nav>
         <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about"><u>About Me</u></a></li>
+          <li><a href="#projects"><u>Projects</u></a></li>
+        
+          <li><a href="#skills"><u>Skills</u></a></li>
+          <li><a href="#education"><u>Education</u></a></li>
+          <li><a href="#contact"><u>Contact</u></a></li>
         </ul>
       </nav>
     </header>
 
     <section id="about">
-      <h2>About Me</h2>
-      <img
+      <h2><u>About Me</u></h2>
+      <div class="contain">
+        <img
         src="image/sagar image .jpg"
         alt="Sagar Raj"
         class="profile-pic"
         width="300"
         height="200"
       />
-      <p>
+
+      <div class="description">  <p>
         Hello! I'm Sagar Raj, a Final-year Computer Science Engineering student.
         I love building web applications and solving complex problems.
-      </p>
-    </section>
-      
-      <div id="skills"><h4><u>SKILLS</u></h4> 
-                  
-                    <ol type="bullet"><li>C++</li>
-                        <li>HTML,CSS,JavaSript</li>
-                    </ol>
-                </div>
-                <div id="end"><br>
+      </p></div>
 
-                    <div id="edu"><h4><u>EDUCATION</u></h4>
-            
-                          <ul> 
-                                         <li>Jain Bharati Mrigavati Vidyalaya(2004-2017)</li>
-                                        <li>Netaji Subhas Institute of Technology</li>
-                                        <li>Computer Engineering(2017-2021)</li>
-                                    </ul>
-                                </div>
-                                <br>
-
-
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="projects">
-        <div class="project-card">
-          <h3>Project 1</h3>
-          <p>
-            A brief description of Project 1. You can include a link to the
-            GitHub repo or a live demo.
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Project 2</h3>
-          <p>
-            A brief description of Project 2. Add more details about what you
-            built and the technologies used.
-          </p>
-        </div>
-        <div class="project-card">
-          <h3>Project 3</h3>
-          <p>
-            A brief description of Project 3. Feel free to highlight challenges
-            you overcame or any cool features.
-          </p>
-        </div>
       </div>
-    </section>
+    
+    
+      <section id="skills">
+        <h2><u>Skills</u></h2>
+        <ul>
+          <li><strong>OS:</strong> Windows</li>
+          <li><strong>Languages:</strong> C++, C, HTML, CSS, JavaScript</li>
+          <li><strong>Databases:</strong> MySQL</li>
+          <li><strong>Other Interests:</strong> GitHub, Operating Systems, Computer Networking, Software Engineering</li>
+        </ul>
+      </section>
+      
+      <section id="education">
+        <h2><u>Education</u></h2>
+        <ul>
+          <li>
+            <strong>Bachelor of Technology in Computer Science and Engineering</strong><br>
+            Chandigarh Group of Colleges, Landran<br>
+            <em>Session: 2021-2025 </em>
+          </li>
+          <li>
+            <strong>Intermediate (CBSE)</strong><br>
+            Gyan Bharti Residential Complex, Bodh Gaya<br>
+            <em>Session: 2020-2021</em>
+          </li>
+          <li>
+            <strong>Matriculation (CBSE)</strong><br>
+            Pragya Bharti Public School, Gaya<br>
+            <em>Session: 2018-2019</em>
+          </li>
+        </ul>
+      </section>
+      
+      <section id="projects">
+        <h2><u>My Projects</u></h2>
+        <div class="projects">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <h3><u>Job Board</u></h3>
+            <p>
+              <strong>Duration:</strong> 1 Month (Feb 2024 - Apr 2024)<br>
+              <strong>Environment:</strong> Any Desk<br>
+              <strong>Languages/Database:</strong> HTML, CSS, JavaScript, NodeJs, MongoDB<br>
+              <strong>Team Size:</strong> 2 members<br>
+              <strong>Description:</strong> Web-based application that aims to streamline the job hunt for students, saves time, keeps data in the backend, and includes a published research paper.
+            </p>
+          </div>
+      
+          <!-- Project 2 -->
+          <div class="project-card">
+            <h3><u>Weather Forecast</u></h3>
+            <p>
+              <strong>Role:</strong> Developer<br>
+              <strong>Duration:</strong> 20 Days<br>
+              <strong>Environment:</strong> Any Desktop<br>
+              <strong>Languages/Database:</strong> HTML, CSS, JavaScript, API<br>
+              <strong>Team Size:</strong> Individual<br>
+              <strong>Description:</strong> Developed a user-friendly, responsive interface using HTML, CSS, and JavaScript to display weather data and predictions to users.
+            </p>
+          </div>
+      
+          <!-- Project 3 -->
+          <div class="project-card">
+            <h3><u>Portfolio</u></h3>
+            <p>
+              <strong>Environment:</strong> Windows<br>
+              <strong>Languages:</strong> HTML, CSS, JavaScript<br>
+              <strong>Team Size:</strong> Individual<br>
+              <strong>Description:</strong> This portfolio contains information about me, including my skills, education, and projects.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+                   
+      <section id="contact">
+        <h2 class="contact-me-text"><u>Contact Me</u></h2>
+        <div class="contact-container">
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            
+            <div id="sendm">
+            <input type="submit" value="Send Message" class="send-msg" />
+            </div>
+          </form>
+          
+          <div class="git-linkedin">
+            <a href="https://github.com/SgrRaj" target="_blank" class="github-link-down">
+              <i class="fab fa-github"></i> GitHub
+            </a><br>
+      
+            <a href="https://www.linkedin.com/in/sagar-raj-3b75b1224/" target="_blank" class="linkedin-link-down">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a><br>
+      
+            <a href="mailto:sagar2121442raj@gmail.com" target="_blank" class="gmail-link-down">
+              <i class="fas fa-envelope"></i> Gmail
+            </a>
+          </div>
+        </div>
+      </section>
+      
 
-    <section id="contact">
-      <h2 class="contact-me-text">Contact Me</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-      </form>
-    </section>
-    <input type="submit" value="Send Message" class="send-msg" /><br>
-    <div class="git-linkedin">
-      <a href="https://github.com/SgrRaj" target="_blank" class="github-link-down">
-        <i class="fab fa-github"></i> GitHub
-      </a><br>
 
-      <a
-        href="https://www.linkedin.com/in/sagar-raj-3b75b1224/"
-        target="_blank"
-        class="linkedin-link-down"
-      >
-        <i class="fab fa-linkedin"></i> linkedin
-      </a><br>
-
-      <a
-        href="mailto:sagar2121442raj@gmail.com"
-        target="_blank"
-        class="gmail-link-down"
-      >
-        <i class="fas fa-envelope"></i> Gmail
-      </a>
-    </div>
 
     <!-- Scroll-to-Top Button -->
-    <a href="#" class="scroll-up" id="scrollBtn">↑</a>
-
+    <button id="scrollBtn" title="Go to top">↑</button>
+    <script src="script.js"></script>
+    
     <footer>
       <p>© 2024 Sagar Raj. All Rights Reserved.</p>
     </footer>

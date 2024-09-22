@@ -31,20 +31,98 @@ header h1 {
   font-size: 2.5rem;
 }
 
+.contain{
+  display: flex;
+  align-items: center;
+}
+
+.discription{
+  flex-grow: 1;
+}
+
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #4caf50;
   box-shadow: 0 4px 8px rgba(20, 1, 1, 0.63);
   margin: 20px 20px;
+  
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .profile-pic:hover {
   transform: scale(1.1); /* Scales up the image */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.58); /* Darker shadow on hover */
+}
+
+#about h2{
+  text-align: center;
+}
+
+#skills {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+ 
+}
+
+#skills h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#skills strong {
+  color: #0073e6; /* Customize this color if needed */
+}
+
+#education {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+#education h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#education ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#education li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#education strong {
+  color: #0073e6; /* Customize this color if needed */
+}
+
+#education em {
+  font-style: italic;
+  color: #666;
 }
 
 nav ul {
@@ -65,17 +143,21 @@ nav ul li a {
 
 section {
   padding: 20px;
-  text-align: center;
+  
 }
 
 /* Projects Section */
 .projects {
-  display: -webkit-flex;
+  display: flex;
+  
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
 }
 
+#projects h2{
+  text-align: center;
+}
 .project-card {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -115,69 +197,91 @@ section {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px #333;
 }
-.contact-me-text {
+
+#projects strong{
+  color:green
+}
+
+#contact h2{
   text-align: left;
-  margin-left: 125px;
 }
 
-.contact-form {
-  max-width: 400px;
-  margin-left: 0 auto;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.social-links {
-  text-align: center;
-}
-
-.github-link-down,.linkedin-link-down,.gmail-link-down{
-    font-size: 20px;
-    padding-left: 30px;
-    padding-top: 10px;
-}
-
-.send-msg {
-  border: red solid;
-  border-radius: 20px;
-  padding: 10px;
-  margin-left: 20px;
-  background-color: #d3d3d3;
+/* Styling the contact section container */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between form and links */
   
 }
 
-/* Scroll Up Button CSS */
-.scroll-up {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: whitesmoke;
-    color: #FFFFFF
-    
-    /* border: none;
-    padding 10px 15px;
-   border-radius:after;
-    text-align: center;
-    cursor: pointer;
-    font-size: 1.5rem;
-    
-    transition background-color 0.3s ease; */
-    
+/* Styling the form */
+.contact-form {
+  flex: 1; /* Takes available space */
+  max-width: 300px;
+  border-radius: 20px;
 }
 
-.scroll-up:hover {
-    background-color: #d3d3d3;
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#sendm {
+  border: #4caf50;
+  border-radius: 20px;
+}
+/* Submit button */
+.send-msg {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: green;
+}
+
+/* Styling the links section */
+.git-linkedin {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align links to the left */
+  flex: 0 0 800px; /* Fixed width for links */
+}
+
+/* Styling individual links */
+.git-linkedin a {
+  margin: 1px 0;
+  font-size: 20px;
+  text-decoration:#4caf50;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* Scroll to Top Button */
+#scrollBtn {
+  display:block;
+  position:fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+#scrollBtn:hover {
+  background-color: #333;
 }
 
 
